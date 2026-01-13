@@ -1,0 +1,83 @@
+@import url(./assets/fonts/fonts.css);
+
+:root {
+  font-family: "TildaSans", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+
+  --bg-color: #020617;
+  --bg-elevated: #020617;
+  --border-color: rgba(148, 163, 184, 0.25);
+  --accent: #4f46e5;
+  --accent-soft: rgba(79, 70, 229, 0.15);
+  --accent-strong: #6366f1;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --error: #f97373;
+  --shadow-soft: 0 22px 45px rgba(15, 23, 42, 0.65);
+  --radius-lg: 18px;
+  --radius-full: 999px;
+
+  --glass-blur: blur(10px);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-reflection: inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+
+  --note-active-bg: radial-gradient(circle at 30% 30%, #6366f1, #4f46e5);
+  --note-active-shadow: 0 0 20px rgba(79, 70, 229, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+
+  --note-tuned-bg: radial-gradient(circle at 30% 30%, #22c55e, #15803d);
+  --note-tuned-shadow: 0 0 25px rgba(34, 197, 94, 0.5),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+
+  --btn-primary-bg: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 0.8) 0%,
+    rgba(99, 102, 241, 0.6) 100%
+  );
+  --btn-primary-hover: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 1) 0%,
+    rgba(99, 102, 241, 0.8) 100%
+  );
+  --btn-primary-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+
+  --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+  --btn-secondary-hover: rgba(255, 255, 255, 0.12);
+
+  --input-bg: rgba(15, 23, 42, 0.6);
+  --input-border: rgba(148, 163, 184, 0.2);
+  --input-focus-border: var(--accent);
+  --input-text: var(--text-main);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "TildaSans", Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #000 100%);
+  color: var(--text-main);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+textarea,
+button {
+  font-family: "TildaSans", Arial, sans-serif;
+}
