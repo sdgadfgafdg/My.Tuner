@@ -305,7 +305,7 @@ useTunerFeedback({
         justify-content: space-between;
         gap: 0.4rem;
         padding: 0.1rem 0.8rem;
-        margin-top: 0.75rem;
+        margin-top: 1.5rem;
         background: var(--glass-bg);
         backdrop-filter: var(--glass-blur);
         border-radius: var(--radius-lg);

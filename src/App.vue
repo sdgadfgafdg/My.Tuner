@@ -2,7 +2,7 @@
   <div class="app-root">
     <div class="header-actions">
       <button class="btn btn--secondary mode-btn" @click="toggleMode">
-        {{ mode === 'single' ? 'Basic Tuner' : 'Multi Tuner' }}
+        {{ mode === 'single' ? 'Multi Tuner' : 'Basic Tuner' }}
       </button>
     </div>
 
@@ -126,10 +126,14 @@ const toggleMode = () => {
     right: 0.75rem;
   }
 
+  .mode-btn {
+    font-size: 0.8rem !important;
+  }
+
   .btn {
-    padding: 0.60rem 1.2rem;
-    font-size: 1.2rem;
-    min-height: 36px;
+    padding: 0.40rem 1rem;
+    font-size: 0.9rem;
+    height: 30px;
   }
 
 }
@@ -142,13 +146,13 @@ const toggleMode = () => {
   }
 
   .mode-btn {
-    font-size: 0.8rem !important;
-    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem !important;
   }
 
   .btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 1.1rem;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    height: 28px;
   }
 }
 </style>
