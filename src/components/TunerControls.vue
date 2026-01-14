@@ -110,4 +110,52 @@ defineEmits<{
     font-size: 0.85rem;
     font-weight: 500;
 }
+
+@media (max-width: 428px) {
+    .btn-row {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 1.4rem;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        position: relative;
+        padding: 0.7rem 2rem;
+        border-radius: var(--radius-full);
+        font-size: 0.9rem;
+    }
+
+    .error {
+        color: var(--error);
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn-row {
+        display: flex;
+        gap: 0.95rem;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        position: relative;
+        padding: 0.7rem 2rem;
+        border-radius: var(--radius-full);
+        font-size: 0.85rem;
+    }
+
+    .error {
+        color: var(--error);
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+}
 </style>

@@ -19,8 +19,30 @@ defineProps<{ frequency: number }>()
 }
 
 .note-frequency-value {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--text-main);
+}
+
+@media (max-width: 428px) {
+    .note-frequency {
+        font-size: 0.9rem;
+        margin-top: 0.7rem;
+    }
+
+    .note-frequency-value {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .note-frequency {
+        font-size: 0.85rem;
+        margin-top: 0.65rem;
+    }
+
+    .note-frequency-value {
+        font-size: 0.85rem;
+    }
 }
 </style>

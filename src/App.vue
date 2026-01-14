@@ -119,4 +119,36 @@ const toggleMode = () => {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 428px) {
+  .header-actions {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.60rem 1.2rem;
+    font-size: 1.2rem;
+    min-height: 36px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .header-actions {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .mode-btn {
+    font-size: 0.8rem !important;
+    padding: 0.45rem 0.9rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+  }
+}
 </style>

@@ -70,4 +70,60 @@ const display = computed(() => {
     transform: translate(-50%, -50%);
     background: linear-gradient(180deg, #f97316, #ef4444);
 }
+
+@media (max-width: 428px) {
+    .cents-wrapper {
+        margin-top: 0.75rem;
+    }
+
+    .caption,
+    .cents-bar-scale,
+    .cents-value {
+        font-size: 0.9rem;
+    }
+
+    .cents-bar {
+        gap: 0.6rem;
+    }
+
+    .cents-bar-track {
+        width: 200px;
+        height: 0.4rem;
+    }
+
+    .cents-bar-indicator {
+        position: absolute;
+        top: 50%;
+        width: 4px;
+        height: 1.1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .cents-wrapper {
+        margin-top: 0.75rem;
+    }
+
+    .caption,
+    .cents-bar-scale,
+    .cents-value {
+        font-size: 0.85rem;
+    }
+
+    .cents-bar {
+        gap: 0.6rem;
+    }
+
+    .cents-bar-track {
+        width: 180px;
+        height: 0.4rem;
+    }
+
+    .cents-bar-indicator {
+        position: absolute;
+        top: 50%;
+        width: 4px;
+        height: 1.1rem;
+    }
+}
 </style>

@@ -49,6 +49,7 @@ const {
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-soft);
+
 }
 
 .container-title {
@@ -58,5 +59,41 @@ const {
     text-transform: uppercase;
     color: var(--text-muted);
     margin-bottom: 3rem;
+}
+
+@media (max-width: 428px) {
+    .container {
+        height: 60%;
+        width: 100%;
+        max-width: 400px;
+        padding: 1rem 1.2rem 1.5rem;
+        margin: 0.75rem;
+    }
+
+    .container-title {
+        text-align: center;
+        font-size: 1.2rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        height: 60%;
+        width: 100%;
+        max-width: 400px;
+        padding: 0.9rem 1.2rem 1.4rem;
+        margin: 0.75rem;
+    }
+
+    .container-title {
+        text-align: center;
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1.4rem;
+    }
 }
 </style>

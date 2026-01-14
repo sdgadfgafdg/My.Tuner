@@ -66,4 +66,50 @@ const octave = computed(() =>
     font-size: 0.9rem;
     color: var(--text-muted);
 }
+
+@media (max-width: 428px) {
+    .note-wrapper {
+        margin-top: 0.9rem;
+    }
+
+    .note-circle {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 1rem;
+    }
+
+    .note-text-main {
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+    }
+
+    .note-text-octave {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+    }
+}
+
+@media (max-width: 375px) {
+    .note-wrapper {
+        margin-top: 0.85rem;
+    }
+
+    .note-circle {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1rem;
+    }
+
+    .note-text-main {
+        font-size: 2.4rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+    }
+
+    .note-text-octave {
+        font-size: 0.7rem;
+        color: var(--text-muted);
+    }
+}
 </style>
