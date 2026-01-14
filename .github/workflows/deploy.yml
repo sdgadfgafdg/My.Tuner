@@ -1,0 +1,31 @@
+name: Deploy Tuner
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: docker build -t vue-tuner .
+
+      - name: Stop and Remove Old Container
+        run: |
+          docker stop vue-tuner || true
+          docker rm vue-tuner || true
+
+      - name: Run New Container
+        run: |
+          docker run -d \
+            --name vue-tuner \
+            --restart always \
+            -p 8443:8443 \
+            tuner
