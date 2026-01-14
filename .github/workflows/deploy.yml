@@ -25,7 +25,7 @@ jobs:
       - name: Run New Container
         run: |
           docker run -d \
-            --name vue-tuner \
+            --name tuner \
             --restart always \
             -p 8443:8443 \
-            tuner
+            vue-tuner
