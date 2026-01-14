@@ -28,4 +28,7 @@ jobs:
             --name tuner \
             --restart always \
             -p 8443:8443 \
+            -p 80:80 \
+            -v caddy_data:/data \
+            -v caddy_config:/config \
             vue-tuner
