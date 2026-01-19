@@ -268,6 +268,16 @@ useTunerFeedback({
     transform: translateY(-2px);
 }
 
+.presets-list-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.presets-select-mobile {
+    display: none;
+}
+
 @media (max-width: 428px) {
     .container {
         width: 100%;
